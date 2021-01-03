@@ -1,0 +1,62 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\spin_sensor_receiver.qsys --block-symbol-file --output-directory=D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\spin_sensor_receiver --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading spin_sensor/spin_sensor_receiver.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding spin_sensor_receiver_0 [spin_sensor_receiver 1.0]
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding spin_sensor_receiver_0 [spin_sensor_receiver 1.0]
+Error: Component spin_sensor_receiver can't instantiate a custom component with the same name as itself
+Warning: spin_sensor_receiver_0: Component type spin_sensor_receiver is not in the library
+Progress: Parameterizing module spin_sensor_receiver_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module spin_sensor_receiver_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Error: spin_sensor_receiver.spin_sensor_receiver_0.spin_sensor_receiver_0: Component spin_sensor_receiver 1.0 not found or could not be instantiated
+Error: spin_sensor_receiver.clk_0.clk/spin_sensor_receiver_0.device_clock: Missing connection end (try "Remove Dangling Connections")
+Error: spin_sensor_receiver.clk_0.clk/spin_sensor_receiver_0.s_axi_clock: Missing connection end (try "Remove Dangling Connections")
+Error: spin_sensor_receiver.clk_0.clk_reset/spin_sensor_receiver_0.s_axi_reset: Missing connection end (try "Remove Dangling Connections")
+Error: spin_sensor_receiver.spin_sensor_receiver_0: spin_sensor_receiver_0.clk must be connected to a clock output
+Error: spin_sensor_receiver.spin_sensor_receiver_0: spin_sensor_receiver_0.reset must be connected to a reset source
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\spin_sensor_receiver.qsys --synthesis=VHDL --output-directory=D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\spin_sensor_receiver\synthesis --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading spin_sensor/spin_sensor_receiver.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding spin_sensor_receiver_0 [spin_sensor_receiver 1.0]
+Progress: Parameterizing module spin_sensor_receiver_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Error: spin_sensor_receiver.spin_sensor_receiver_0.spin_sensor_receiver_0: Component spin_sensor_receiver 1.0 not found or could not be instantiated
+Error: spin_sensor_receiver.clk_0.clk/spin_sensor_receiver_0.device_clock: Missing connection end (try "Remove Dangling Connections")
+Error: spin_sensor_receiver.clk_0.clk/spin_sensor_receiver_0.s_axi_clock: Missing connection end (try "Remove Dangling Connections")
+Error: spin_sensor_receiver.clk_0.clk_reset/spin_sensor_receiver_0.s_axi_reset: Missing connection end (try "Remove Dangling Connections")
+Error: spin_sensor_receiver.spin_sensor_receiver_0: spin_sensor_receiver_0.clk must be connected to a clock output
+Error: spin_sensor_receiver.spin_sensor_receiver_0: spin_sensor_receiver_0.reset must be connected to a reset source
+Info: spin_sensor_receiver: Generating spin_sensor_receiver "spin_sensor_receiver" for QUARTUS_SYNTH
+Warning: spin_sensor_receiver: "No matching role found for clk_0:clk:clk_out (clk)"
+Warning: spin_sensor_receiver: "No matching role found for clk_0:clk:clk_out (clk)"
+Warning: spin_sensor_receiver: "No matching role found for clk_0:clk_reset:reset_n_out (reset)"
+Warning: spin_sensor_receiver_0: "No matching role found for clk_0:clk:clk_out (clk)"
+Warning: spin_sensor_receiver_0: "No matching role found for clk_0:clk:clk_out (clk)"
+Warning: spin_sensor_receiver_0: "No matching role found for clk_0:clk_reset:reset_n_out (reset)"
+Info: spin_sensor_receiver_0: "spin_sensor_receiver" instantiated spin_sensor_receiver "spin_sensor_receiver_0"
+Error: spin_sensor_receiver_0: missing_module does not support generation.
+Info: spin_sensor_receiver: Done "spin_sensor_receiver" with 3 modules, 2 files
+Error: qsys-generate failed with exit code 1: 7 Errors, 6 Warnings
+Info: Finished: Create HDL design files for synthesis

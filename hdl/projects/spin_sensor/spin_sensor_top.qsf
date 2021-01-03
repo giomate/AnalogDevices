@@ -1,0 +1,135 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 18:23:26  December 31, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		spin_sensor_top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA4F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY spin_sensor_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:23:26  DECEMBER 31, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SDC_FILE ../../library/intel/common/up_xfer_status_constr.sdc
+set_global_assignment -name SDC_FILE ../../library/intel/common/up_xfer_cntrl_constr.sdc
+set_global_assignment -name SDC_FILE ../../library/intel/common/up_rst_constr.sdc
+set_global_assignment -name SDC_FILE ../../library/intel/common/up_clock_mon_constr.sdc
+set_global_assignment -name SDC_FILE ../arradio/c5soc/system_constr.sdc
+set_global_assignment -name VERILOG_FILE ../../library/intel/common/ad_mul.v
+set_global_assignment -name VERILOG_FILE ../../library/intel/common/ad_dcfilter.v
+set_global_assignment -name VERILOG_FILE ../../library/common/util_pulse_gen.v
+set_global_assignment -name VERILOG_FILE ../../library/common/util_delay.v
+set_global_assignment -name VERILOG_FILE ../../library/common/util_dec256sinc24b.v
+set_global_assignment -name VERILOG_FILE ../../library/common/util_axis_upscale.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_xfer_status.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_xfer_cntrl.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_tdd_cntrl.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_pmod.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_hdmi_tx.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_hdmi_rx.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_delay_cntrl.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_dac_common.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_dac_channel.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_clock_mon.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_clkgen.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_axi.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_adc_common.v
+set_global_assignment -name VERILOG_FILE ../../library/common/up_adc_channel.v
+set_global_assignment -name VHDL_FILE ../../library/common/pl330_dma_fifo.vhd
+set_global_assignment -name VHDL_FILE ../../library/common/dma_fifo.vhd
+set_global_assignment -name VHDL_FILE ../../library/common/axi_streaming_dma_tx_fifo.vhd
+set_global_assignment -name VHDL_FILE ../../library/common/axi_streaming_dma_rx_fifo.vhd
+set_global_assignment -name VHDL_FILE ../../library/common/axi_ctrlif.vhd
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_xcvr_rx_if.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_tdd_control.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_sysref_gen.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_ss_444to422.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_ss_422to444.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_rst.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_pps_receiver.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_pnmon.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_pngen.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_perfect_shuffle.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_mux_core.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_mux.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_mem_asym.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_mem.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_iqcor.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_iobuf.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_g2b.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_edge_detect.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_dds_sine_cordic.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_dds_sine.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_dds_cordic_pipe.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_dds_2.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_dds_1.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_dds.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_datafmt.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_csc_RGB2CrYCb.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_csc_CrYCb2RGB.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_csc.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_bus_mux.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_b2g.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_axis_inf_rx.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_adl5904_rst.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_addsub.v
+set_global_assignment -name VERILOG_FILE ../../library/common/ad_3w_spi.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/intel/axi_ad9361_lvds_if_c5.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/intel/axi_ad9361_lvds_if_10.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/intel/axi_ad9361_lvds_if.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/intel/axi_ad9361_cmos_if.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/intel/axi_ad9361_alt_lvds_tx.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/intel/axi_ad9361_alt_lvds_rx.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/axi_ad9361_tx_channel.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/axi_ad9361_tx.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/axi_ad9361_tdd_if.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/axi_ad9361_tdd.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/axi_ad9361_rx_pnmon.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/axi_ad9361_rx_channel.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/axi_ad9361_rx.v
+set_global_assignment -name VERILOG_FILE ../../library/axi_ad9361/axi_ad9361.v
+set_global_assignment -name VERILOG_FILE spin_sensor_top.v
+set_global_assignment -name SDC_FILE constraints/spin_sensor_constraints_in.sdc
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

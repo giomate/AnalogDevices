@@ -1,0 +1,27 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\sensor_reader.qsys --block-symbol-file --output-directory=D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\sensor_reader --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading spin_sensor/sensor_reader.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\sensor_reader.qsys --synthesis=VERILOG --output-directory=D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\sensor_reader\synthesis --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading spin_sensor/sensor_reader.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sensor_reader: Generating sensor_reader "sensor_reader" for QUARTUS_SYNTH
+Info: sensor_reader: Done "sensor_reader" with 1 modules, 1 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

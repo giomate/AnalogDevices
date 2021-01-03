@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sat Jan 02 13:36:18 2021
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : spin_sensor_top
+Top-level Entity Name : spin_sensor_top
+Family : Cyclone V
+Device : 5CEBA4F23C8
+Timing Models : Final
+Logic utilization (in ALMs) : 1,735 / 18,480 ( 9 % )
+Total registers : 4645
+Total pins : 186 / 224 ( 83 % )
+Total virtual pins : 0
+Total block memory bits : 186 / 3,153,920 ( < 1 % )
+Total RAM Blocks : 2 / 308 ( < 1 % )
+Total DSP Blocks : 7 / 66 ( 11 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2 / 4 ( 50 % )
+Total DLLs : 0 / 4 ( 0 % )

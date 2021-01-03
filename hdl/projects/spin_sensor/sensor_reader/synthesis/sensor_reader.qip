@@ -1,0 +1,146 @@
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_TOOL_VERSION "20.1"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "sensor_reader" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../sensor_reader.sopcinfo"]
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name SLD_INFO "QSYS_NAME sensor_reader HAS_SOPCINFO 1 GENERATION_ID 1609604561"
+set_global_assignment -library "sensor_reader" -name MISC_FILE [file join $::quartus(qip_path) "../sensor_reader.cmp"]
+set_global_assignment -library "sensor_reader" -name SLD_FILE [file join $::quartus(qip_path) "sensor_reader.debuginfo"]
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_QSYS_MODE "SYSTEM"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "sensor_reader" -name MISC_FILE [file join $::quartus(qip_path) "../../sensor_reader.qsys"]
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_NAME "c2Vuc29yX3JlYWRlcg=="
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_DISPLAY_NAME "c2Vuc29yX3JlYWRlcg=="
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYwOTYwNDU2MQ==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNFQkE0RjIzQzg=::QXV0byBERVZJQ0U="
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::OA==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "sensor_reader" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_NAME "YWx0ZXJhX3Jlc2V0X2NvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_DISPLAY_NAME "TWVybGluIFJlc2V0IENvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_VERSION "MjAuMQ=="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_DESCRIPTION "Rm9yIHN5c3RlbXMgd2l0aCBtdWx0aXBsZSByZXNldCBpbnB1dHMsIHRoZSBNZXJsaW4gUmVzZXQgQ29udHJvbGxlciBPUnMgYWxsIHJlc2V0IGlucHV0cyBhbmQgZ2VuZXJhdGVzIGEgc2luZ2xlIHJlc2V0IG91dHB1dC4="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "TlVNX1JFU0VUX0lOUFVUUw==::MQ==::TnVtYmVyIG9mIGlucHV0cw=="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "T1VUUFVUX1JFU0VUX1NZTkNfRURHRVM=::ZGVhc3NlcnQ=::T3V0cHV0IFJlc2V0IFN5bmNocm9ub3VzIEVkZ2Vz"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "U1lOQ19ERVBUSA==::Mg==::U3luY2hyb25pemVyIGRlcHRo"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRVUVTVF9QUkVTRU5U::MA==::UmVzZXQgcmVxdWVzdCBsb2dpYyBlbmFibGU="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRX1dBSVRfVElNRQ==::MQ==::UmVzZXQgcmVxdWVzdCB3YWl0IHRpbWU="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "TUlOX1JTVF9BU1NFUlRJT05fVElNRQ==::Mw==::TWluaW11bSByZXNldCBhc3NlcnRpb24gdGltZQ=="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRX0VBUkxZX0RTUlRfVElNRQ==::MQ==::UmVzZXQgcmVxdWVzdCBkZWFzc2VydCB0aW1pbmc="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4w::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjA="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4x::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4y::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjI="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4z::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjM="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU40::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjQ="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU41::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjU="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU42::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjY="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU43::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjc="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU44::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjg="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU45::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjk="
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMA==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEw"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEx"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMg==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEy"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMw==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEz"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNA==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE0"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE1"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU5QVVQ=::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcmVzZXRfaW5wdXRz"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "QURBUFRfUkVTRVRfUkVRVUVTVA==::MA==::T25seSBhZGFwdCBvbmx5IHJlc2V0IHJlcXVlc3Q="
+set_global_assignment -entity "spin_sensor_top" -library "sensor_reader" -name IP_COMPONENT_NAME "c3Bpbl9zZW5zb3JfdG9w"
+set_global_assignment -entity "spin_sensor_top" -library "sensor_reader" -name IP_COMPONENT_DISPLAY_NAME "c3Bpbl9zZW5zb3JfcmVjZWl2ZXI="
+set_global_assignment -entity "spin_sensor_top" -library "sensor_reader" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "spin_sensor_top" -library "sensor_reader" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "spin_sensor_top" -library "sensor_reader" -name IP_COMPONENT_AUTHOR "Z2lvdmFubnk="
+set_global_assignment -entity "spin_sensor_top" -library "sensor_reader" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "spin_sensor_top" -library "sensor_reader" -name IP_COMPONENT_PARAMETER "RlBHQV9URUNITk9MT0dZ::Q1lDTE9ORTU=::RlBHQV9URUNITk9MT0dZ"
+
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "sensor_reader.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "sensor_reader" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/spin_sensor_top.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_rx.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_rx_channel.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_rx_pnmon.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_tdd.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_tdd_if.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_tx.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_tx_channel.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_alt_lvds_rx.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_alt_lvds_tx.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_cmos_if.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_lvds_if.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_lvds_if_10.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/axi_ad9361_lvds_if_c5.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_3w_spi.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_addsub.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_adl5904_rst.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_axis_inf_rx.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_b2g.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_bus_mux.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_csc.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_csc_CrYCb2RGB.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_csc_RGB2CrYCb.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_datafmt.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_dds.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_dds_1.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_dds_2.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_dds_cordic_pipe.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_dds_sine.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_dds_sine_cordic.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_edge_detect.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_g2b.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_iobuf.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_iqcor.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_mem.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_mem_asym.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_mux.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_mux_core.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_perfect_shuffle.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_pngen.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_pnmon.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_pps_receiver.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_rst.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_ss_422to444.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_ss_444to422.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_sysref_gen.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_tdd_control.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_xcvr_rx_if.v"]
+set_global_assignment -library "sensor_reader" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/axi_ctrlif.vhd"]
+set_global_assignment -library "sensor_reader" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/axi_streaming_dma_rx_fifo.vhd"]
+set_global_assignment -library "sensor_reader" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/axi_streaming_dma_tx_fifo.vhd"]
+set_global_assignment -library "sensor_reader" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/dma_fifo.vhd"]
+set_global_assignment -library "sensor_reader" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pl330_dma_fifo.vhd"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_adc_channel.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_adc_common.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_axi.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_clkgen.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_clock_mon.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_dac_channel.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_dac_common.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_delay_cntrl.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_hdmi_rx.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_hdmi_tx.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_pmod.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_tdd_cntrl.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_xfer_cntrl.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/up_xfer_status.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/util_axis_upscale.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/util_dec256sinc24b.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/util_delay.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/util_pulse_gen.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_dcfilter.v"]
+set_global_assignment -library "sensor_reader" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ad_mul.v"]
+
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_TOOL_VERSION "20.1"
+set_global_assignment -entity "altera_reset_controller" -library "sensor_reader" -name IP_TOOL_ENV "Qsys"

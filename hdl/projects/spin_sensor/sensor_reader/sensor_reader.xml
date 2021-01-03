@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2021.01.02.17:22:43"
+ outputDirectory="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CEBA4F23C8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="sensor_reader:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CEBA4F23C8,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1609604561,AUTO_UNIQUE_ID=(clock_source:20.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_clock_bridge:20.1:DERIVED_CLOCK_RATE=0,EXPLICIT_CLOCK_RATE=0,NUM_CLOCK_OUTPUTS=1)(spin_sensor_receiver:1.0:FPGA_TECHNOLOGY=CYCLONE5)(clock:20.1:)(clock:20.1:)(clock:20.1:)(reset:20.1:)"
+   instancePathKey="sensor_reader"
+   kind="sensor_reader"
+   version="1.0"
+   name="sensor_reader">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1609604561" />
+  <parameter name="AUTO_DEVICE" value="5CEBA4F23C8" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <generatedFiles>
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/sensor_reader.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/spin_sensor_top.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_channel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_pnmon.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd_if.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx_channel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_tx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_cmos_if.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_10.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_c5.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_3w_spi.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_addsub.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_adl5904_rst.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_axis_inf_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_b2g.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_bus_mux.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_CrYCb2RGB.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_RGB2CrYCb.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_datafmt.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_1.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_2.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_cordic_pipe.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine_cordic.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_edge_detect.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_g2b.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iobuf.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iqcor.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem_asym.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux_core.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_perfect_shuffle.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pngen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pnmon.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pps_receiver.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_rst.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_422to444.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_444to422.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_sysref_gen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_tdd_control.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_xcvr_rx_if.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ctrlif.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_rx_fifo.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_tx_fifo.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/dma_fifo.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/pl330_dma_fifo.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_channel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_common.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_axi.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clkgen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clock_mon.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_channel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_common.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_delay_cntrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_tx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_pmod.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_tdd_cntrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_cntrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_status.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_axis_upscale.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_dec256sinc24b.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_delay.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_pulse_gen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dcfilter.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mul.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/spin_sensor_receiver_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/20.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="sensor_reader">queue size: 0 starting:sensor_reader "sensor_reader"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>3</b> modules, <b>4</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>4</b> modules, <b>6</b> connections]]></message>
+   <message level="Debug" culprit="sensor_reader"><![CDATA["<b>sensor_reader</b>" reuses <b>spin_sensor_receiver</b> "<b>submodules/spin_sensor_top</b>"]]></message>
+   <message level="Debug" culprit="sensor_reader"><![CDATA["<b>sensor_reader</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="sensor_reader">queue size: 1 starting:spin_sensor_receiver "submodules/spin_sensor_top"</message>
+   <message level="Info" culprit="spin_sensor_receiver_0"><![CDATA["<b>sensor_reader</b>" instantiated <b>spin_sensor_receiver</b> "<b>spin_sensor_receiver_0</b>"]]></message>
+   <message level="Debug" culprit="sensor_reader">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>sensor_reader</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="spin_sensor_receiver:1.0:FPGA_TECHNOLOGY=CYCLONE5"
+   instancePathKey="sensor_reader:.:spin_sensor_receiver_0"
+   kind="spin_sensor_receiver"
+   version="1.0"
+   name="spin_sensor_top">
+  <parameter name="FPGA_TECHNOLOGY" value="CYCLONE5" />
+  <generatedFiles>
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/spin_sensor_top.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_channel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_pnmon.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd_if.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx_channel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_tx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_cmos_if.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_10.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_c5.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_3w_spi.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_addsub.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_adl5904_rst.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_axis_inf_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_b2g.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_bus_mux.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_CrYCb2RGB.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_RGB2CrYCb.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_datafmt.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_1.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_2.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_cordic_pipe.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine_cordic.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_edge_detect.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_g2b.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iobuf.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iqcor.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem_asym.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux_core.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_perfect_shuffle.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pngen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pnmon.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pps_receiver.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_rst.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_422to444.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_444to422.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_sysref_gen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_tdd_control.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_xcvr_rx_if.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ctrlif.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_rx_fifo.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_tx_fifo.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/dma_fifo.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/pl330_dma_fifo.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_channel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_common.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_axi.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clkgen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clock_mon.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_channel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_common.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_delay_cntrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_tx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_pmod.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_tdd_cntrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_cntrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_status.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_axis_upscale.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_dec256sinc24b.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_delay.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_pulse_gen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dcfilter.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mul.v"
+       type="VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/spin_sensor_receiver_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="sensor_reader" as="spin_sensor_receiver_0" />
+  <messages>
+   <message level="Debug" culprit="sensor_reader">queue size: 1 starting:spin_sensor_receiver "submodules/spin_sensor_top"</message>
+   <message level="Info" culprit="spin_sensor_receiver_0"><![CDATA["<b>sensor_reader</b>" instantiated <b>spin_sensor_receiver</b> "<b>spin_sensor_receiver_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_reset_controller:20.1:ADAPT_RESET_REQUEST=0,MIN_RST_ASSERTION_TIME=3,NUM_RESET_INPUTS=1,OUTPUT_RESET_SYNC_EDGES=deassert,RESET_REQUEST_PRESENT=0,RESET_REQ_EARLY_DSRT_TIME=1,RESET_REQ_WAIT_TIME=1,SYNC_DEPTH=2,USE_RESET_REQUEST_IN0=0,USE_RESET_REQUEST_IN1=0,USE_RESET_REQUEST_IN10=0,USE_RESET_REQUEST_IN11=0,USE_RESET_REQUEST_IN12=0,USE_RESET_REQUEST_IN13=0,USE_RESET_REQUEST_IN14=0,USE_RESET_REQUEST_IN15=0,USE_RESET_REQUEST_IN2=0,USE_RESET_REQUEST_IN3=0,USE_RESET_REQUEST_IN4=0,USE_RESET_REQUEST_IN5=0,USE_RESET_REQUEST_IN6=0,USE_RESET_REQUEST_IN7=0,USE_RESET_REQUEST_IN8=0,USE_RESET_REQUEST_IN9=0,USE_RESET_REQUEST_INPUT=0"
+   instancePathKey="sensor_reader:.:rst_controller"
+   kind="altera_reset_controller"
+   version="20.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/20.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="sensor_reader" as="rst_controller" />
+  <messages>
+   <message level="Debug" culprit="sensor_reader">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>sensor_reader</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

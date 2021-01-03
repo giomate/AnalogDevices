@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="111" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="237" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/University Program/Clock,Library/Interface Protocols/Ethernet,Project,Library/Basic Functions/On Chip Memory,Library/Qsys Interconnect,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Basic Functions/Clocks; PLLs and Resets,Library/Qsys Interconnect/Memory-Mapped Alpha,Library/Interface Protocols/Ethernet/Reference Design Components,Library/Interface Protocols,Library/DSP/Video and Image Processing,Library/Basic Functions/Bridges and Adaptors/Clock,Library/University Program/Audio &amp; Video,Library/Interface Protocols/PCI Express,Library/DSP,Library/Basic Functions/Simulation; Debug and Verification/Simulation,Library/Processors and Peripherals/Hard Processor Systems,Library/University Program,Library/Basic Functions,Library/Basic Functions/Bridges and Adaptors,Library/Processors and Peripherals,Library/Basic Functions/Simulation; Debug and Verification,Library/Qsys Interconnect/Interrupt,Library/University Program/Audio &amp; Video/Video,Library,Library/Interface Protocols/Audio &amp; Video" />
+ <window width="1936" height="1056" x="1912" y="-8" />
+ <generation synthesis="VERILOG" />
+</preferences>

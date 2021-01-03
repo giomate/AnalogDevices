@@ -1,0 +1,1 @@
+create_clock -name c5_clock -period "38.4 MHz" [get_ports {clk_in}]

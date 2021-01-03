@@ -1,0 +1,43 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\sensor_reader.qsys --block-symbol-file --output-directory=D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\sensor_reader --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading spin_sensor/sensor_reader.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 20.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding spin_sensor_receiver_0 [spin_sensor_receiver 1.0]
+Progress: Parameterizing module spin_sensor_receiver_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: sensor_reader.spin_sensor_receiver_0.reset_source: Associated reset sinks not declared
+Warning: sensor_reader.spin_sensor_receiver_0: spin_sensor_receiver_0.data_if must be exported, or connected to a matching conduit.
+Warning: sensor_reader.spin_sensor_receiver_0: spin_sensor_receiver_0.iq_data_out must be exported, or connected to a matching conduit.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\sensor_reader.qsys --synthesis=VERILOG --output-directory=D:\Salukat\Development\Software\AnalogDevices\AD9361\hdl\projects\spin_sensor\sensor_reader\synthesis --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading spin_sensor/sensor_reader.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 20.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding spin_sensor_receiver_0 [spin_sensor_receiver 1.0]
+Progress: Parameterizing module spin_sensor_receiver_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: sensor_reader.spin_sensor_receiver_0.reset_source: Associated reset sinks not declared
+Warning: sensor_reader.spin_sensor_receiver_0: spin_sensor_receiver_0.data_if must be exported, or connected to a matching conduit.
+Warning: sensor_reader.spin_sensor_receiver_0: spin_sensor_receiver_0.iq_data_out must be exported, or connected to a matching conduit.
+Info: sensor_reader: Generating sensor_reader "sensor_reader" for QUARTUS_SYNTH
+Info: spin_sensor_receiver_0: "sensor_reader" instantiated spin_sensor_receiver "spin_sensor_receiver_0"
+Info: rst_controller: "sensor_reader" instantiated altera_reset_controller "rst_controller"
+Info: sensor_reader: Done "sensor_reader" with 3 modules, 78 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
